@@ -48,7 +48,7 @@ class PikPak {
         length: 10,
         charset: "alphanumeric",
       });
-    this.invite_code = invite_code || "48834297";
+    this.invite_code = invite_code || "25258270";
 
     this.access_token = "";
     this.refresh_token = "";
