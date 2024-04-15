@@ -23,13 +23,6 @@ async function main() {
     .then(() => pikPak.activationCode())
     .then(() => pikPak.printUserInfo())
     .catch((e) => console.log(e));
-
-  // 登录
-  // let pikPak = new PikPak('temp@temp.com', 'tempPassword', 'tempuuid');
-  // pikPak.signin()
-  //     .then(() => pikPak.userMe())
-  //     .then(() => pikPak.printUserInfo())
-  //     .catch(e => console.log(e))
 }
 
 main();
