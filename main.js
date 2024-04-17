@@ -3,6 +3,7 @@ const randomstring = require("randomstring");
 const axios = require("axios");
 const Mailjs = require("@cemalgnlts/mailjs");
 const mailjs = new Mailjs();
+const invite_code = process.argv[2];
 
 async function main() {
   const response = await mailjs.createOneAccount();
@@ -10,7 +11,8 @@ async function main() {
   const password = response.data.password;
 
   console.log(username, password);
-  let pikPak = new PikPak(username, password, null, "25258270");
+  console.log(invite_code)
+  let pikPak = new PikPak(username, password, null, invite_code);
 
   pikPak
     .authVerification()
