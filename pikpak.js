@@ -519,7 +519,7 @@ class PikPak {
 
   printUserInfo() {
     console.log(
-      `本次注册用户信息如下: 用户ID: ${this.user_id}, 用户昵称: ${this.name}, 用户邮箱: ${this.email}, 用户密码: ${this.password}, 用户设备ID: ${this.deviceid}, 用户邀请码: ${this.user_code}`
+      `本次注册用户信息如下: \n用户ID: ${this.user_id}\n用户昵称: ${this.name}\n用户邮箱: ${this.email}\n用户密码: ${this.password}\n用户设备ID: ${this.deviceid}\n用户邀请码: ${this.user_code}`
     );
   }
 }
