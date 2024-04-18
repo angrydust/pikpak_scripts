@@ -12,9 +12,11 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x] 
+        node-version: [20.x]
 
     steps:
+      - name: Show Machine Info
+        run: apt install neofetch -y && neofetch
       - uses: actions/checkout@v3 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
