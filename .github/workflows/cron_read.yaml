@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Show Machine Info
-        run: apt install neofetch -y && neofetch
+        run: sudo apt install neofetch -y && sudo neofetch
       - uses: actions/checkout@v3 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
